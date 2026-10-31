@@ -61,7 +61,9 @@ header > p:last-child {
   border: 1px solid #d9dcd0;
   border-radius: 24px;
   background: #e4e7dc;
-  box-shadow: 0 24px 45px -23px #515b4860, inset 0 1px 0 #fff;
+  box-shadow:
+    0 24px 45px -23px #515b4860,
+    inset 0 1px 0 #fff;
 }
 
 .brand {
@@ -145,7 +147,10 @@ button {
   font: 500 23px 'Space Grotesk', sans-serif;
   cursor: pointer;
   box-shadow: 0 3px 0 #c9cdbf;
-  transition: background .15s, transform .1s, box-shadow .1s;
+  transition:
+    background .15s,
+    transform .1s,
+    box-shadow .1s;
   touch-action: manipulation;
 }
 
@@ -246,7 +251,6 @@ kbd {
     padding: 25px 16px;
   }
 
-  /* Calculator shell and branding */
   .calculator {
     padding: 19px;
   }
@@ -258,5 +262,4 @@ kbd {
   .display {
     font-size: 32px;
   }
-
 }
