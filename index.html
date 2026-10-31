@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple calculator with keyboard support, decimals, and sequential calculations.">
+  <title>Everyday Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">A LITTLE CLARITY</p><h1>Everyday calculator<span>.</span></h1><p>For the numbers on your mind.</p></header>
+    <section class="calculator" aria-label="Calculator">
+      <div class="brand"><span>EVERYDAY</span><span aria-hidden="true">✳</span></div>
+      <div class="screen">
+        <label class="screen-label" for="display">YOUR CALCULATION</label>
+        <input id="display" class="display" type="text" value="0" readonly aria-label="Calculator display" aria-describedby="calculator-status">
+        <span id="calculator-status" class="status" role="status" aria-live="polite"></span>
+      </div>
+      <div class="buttons">
+        <button class="utility clear" data-action="clear-all" aria-label="Clear all">AC</button>
+        <button class="utility" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button class="utility" data-action="percent" aria-label="Percent">%</button>
+        <button class="utility root" data-action="sqrt" aria-label="Square root">√</button>
+        <button class="operator" data-action="operator" data-value="/" aria-label="Divide">÷</button>
+        <button data-action="digit" data-value="7">7</button><button data-action="digit" data-value="8">8</button><button data-action="digit" data-value="9">9</button><button class="operator" data-action="operator" data-value="*" aria-label="Multiply">×</button>
+        <button data-action="digit" data-value="4">4</button><button data-action="digit" data-value="5">5</button><button data-action="digit" data-value="6">6</button><button class="operator" data-action="operator" data-value="-" aria-label="Subtract">−</button>
+        <button data-action="digit" data-value="1">1</button><button data-action="digit" data-value="2">2</button><button data-action="digit" data-value="3">3</button><button class="operator" data-action="operator" data-value="+" aria-label="Add">+</button>
+        <button class="zero" data-action="digit" data-value="0">0</button><button data-action="decimal" aria-label="Decimal point">.</button><button class="equals" data-action="equals" aria-label="Equals">=</button>
+      </div>
+      <div class="calculator-footer"><span>SMALL TOOL. INFINITE POSSIBILITIES.</span><span class="indicator" aria-hidden="true"></span></div>
+    </section>
+    <p class="keyboard-hint">Your keyboard works, too.<br><kbd>Enter</kbd> equals <span>·</span> <kbd>Esc</kbd> clears <span>·</span> <kbd>⌫</kbd> undoes</p>
+  </main>
+</body>
+</html>
