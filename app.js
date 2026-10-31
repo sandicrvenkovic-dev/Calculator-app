@@ -170,12 +170,26 @@ function clearAll() {
 }
 
 function backspace() {
+  function backspace() {
   if (display.value === "Error") return clearAll();
-  if (shouldStartNewNumber) return;
+
+  if (shouldStartNewNumber) {
+    if (operator !== null) {
+      currentInput = String(firstOperand);
+      firstOperand = null;
+      operator = null;
+      shouldStartNewNumber = false;
+      updateDisplay();
+    }
+    return;
+  }
+
   currentInput = currentInput.slice(0, -1);
+
   if (currentInput === "" || currentInput === "-") {
     currentInput = "0";
   }
+
   updateDisplay();
 }
 
